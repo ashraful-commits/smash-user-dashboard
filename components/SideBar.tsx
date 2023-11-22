@@ -233,7 +233,9 @@ const SideBar = () => {
                 <div className="absolute w-[5px] z-10 h-full left-0 bg-[#0badff] rounded-tr-[100px] rounded-br-[100px]"></div>
               )}
               <Link
-                className={` ${activeLi === item.path &&"text-[#0BAEFF]"} w-full flex ml-[20px] text-[18px] font-[600] tracking-[.1px] font-['Poppins'] text-white gap-x-[20px]  hover:text-[#0BAEFF] capitalize `}
+                className={` ${
+                  activeLi === item.path && "text-[#0BAEFF]"
+                } w-full flex ml-[20px] text-[18px] font-[600] tracking-[.1px] font-['Poppins'] text-white gap-x-[20px]  hover:text-[#0BAEFF] capitalize `}
                 href={item.path}
               >
                 {item.svg}
