@@ -2,7 +2,8 @@ import Image from "next/image";
 import React from "react";
 import participent from "@/public/participentSvg.png";
 import eventOverlay from "@/public/eventOverlay.png";
-const UpComingEvent = ({ tourImg, date, time, title, Participent }) => {
+import { eventType } from "@/Type";
+const UpComingEvent = ({ tourImg, date, time, title, Participant }:eventType) => {
   return (
     <div className="w-[304px] relative z-0 h-[325px] rounded-tr-[20px] rounded-tl-[20px] overflow-hidden shrink-0 bg-[#1c1c24]">
       <div className=" overflow-hidden w-full h-full absolute top-0 left-0 z-10">
@@ -31,7 +32,7 @@ const UpComingEvent = ({ tourImg, date, time, title, Participent }) => {
               src={participent}
               alt="participent"
             />
-            {Participent} participants
+            {Participant} participants
           </span>
 
           <button className="w-[30px] h-[30px]  bg-gray-500 bg-opacity-50 hover:scale-105 transition-all duration-500 ease-in-out rounded-full flex justify-center items-center ">

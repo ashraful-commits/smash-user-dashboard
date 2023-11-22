@@ -21,3 +21,17 @@ export type UpcomingType = {
   prize: Number;
   Participant: Number;
 };
+export type eventType = {
+  tourImg: StaticImageData | String;
+
+  date: String;
+  time: String;
+  title: String;
+
+  Participant: Number;
+};
+export type MostPopularType = {
+  tourImg: StaticImageData | String;
+
+  title: String;
+};
