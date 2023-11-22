@@ -16,6 +16,7 @@ import tourImg3 from "@/public/tournamentImg3.png";
 import tourImg4 from "@/public/tournamentImg4.png";
 import UpComingEvent from "./UpComingEvent";
 import MostPopularGam from "./MostPopularGam";
+import Slider from "./Slider";
 const MainContent = () => {
   return (
     <MaxWidthContainer className="w-[1350px] max-h-full bg-[#13131A] px-[40px] pt-[49px]">
@@ -29,93 +30,45 @@ const MainContent = () => {
         </span>
       </h6>
       <div className="w-full hero_section h-[370px] mt-[18px] flex justify-between ">
-        <div className="our big leaque w-[844px] h-full slider rounded-[20px] overflow-hidden">
-          <div className="w-fu h-full relative z-0">
-            <Image
-              className="absolute z-10 top-0 left-0"
-              src={bigLeague}
-              alt="our biggest league"
-            />
-            <Image
-              className="absolute z-20 top-0 left-0"
-              src={bigLeagueoverlay}
-              alt="our biggest league"
-            />
-            <div className="w-[106px] h-[30px] absolute right-[34px] top-[22px] z-30 bg-gray-500 bg-opacity-50 flex justify-center items-center gap-2 rounded-md">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="21"
-                height="20"
-                viewBox="0 0 21 20"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M18.2332 10.0003C18.2332 14.2578 14.712 17.7087 10.3676 17.7087C6.02321 17.7087 2.50195 14.2578 2.50195 10.0003C2.50195 5.74283 6.02321 2.29199 10.3676 2.29199C14.712 2.29199 18.2332 5.74283 18.2332 10.0003Z"
-                  stroke="#A5B2BC"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13.2859 12.4524L10.0801 10.5782V6.53906"
-                  stroke="#A5B2BC"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span className="text-white text-[14px] font-[500] font-['Poppins'] ">
-                22:22:34
-              </span>
-            </div>
-            <div className=" h-full flex flex-col justify-center items-start px-[38px] gap-y-[28px] w-[60%] absolute z-30 top-0">
-              <h1 className="text-[40px] font-[700] leading-[56.1px] capitalize text-white font-['Montserrat']">
-                Our <span className="text-[#E8E2E2]">Biggest</span> League
-                coming soon!
-              </h1>
-              <Button className="text-white font-[500] leading-[46.566px] text-[14.522px]  w-[121px] h-[50px] bg-[#3f83f8] hover:bg-blue-600 hover:scale-105 transition-all duration-500 ease-in-out">
-                Get Started
-              </Button>
-            </div>
-            <div className="w-[95px] h-[41px] z-40 flex absolute bottom-[40px] right-[35px] gap-[3px]">
-              <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                >
-                  <path
-                    d="M16.3711 9.05403L10.3688 15.0563L16.3711 21.0586"
-                    stroke="white"
-                    stroke-width="1.74621"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                >
-                  <path
-                    d="M14.373 9.05403L20.3753 15.0563L14.373 21.0586"
-                    stroke="white"
-                    stroke-width="1.74621"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
+        <div className="w-[844px] relative z-0 h-full slider rounded-[20px] overflow-hidden">
+
+        <Slider bigLeague={bigLeague} bigLeagueoverlay={bigLeagueoverlay} />
+        <div className="w-[95px] h-[41px] z-40 flex absolute bottom-[40px] right-[35px] gap-[3px]">
+          <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <path
+                d="M16.3711 9.05403L10.3688 15.0563L16.3711 21.0586"
+                stroke="white"
+                stroke-width="1.74621"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <path
+                d="M14.373 9.05403L20.3753 15.0563L14.373 21.0586"
+                stroke="white"
+                stroke-width="1.74621"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
         </div>
         <div className="leaderboards w-[410px] h-[371px] rounded-[20px] bg-[#1C1C24]">
           <div className="p-[20px]">

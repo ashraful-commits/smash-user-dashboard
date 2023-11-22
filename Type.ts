@@ -31,3 +31,7 @@ export type MostPopularType = {
   tourImg: StaticImageData | string;
   title: string;
 };
+export type SliderType = {
+  bigLeague: StaticImageData | string;
+  bigLeagueoverlay: StaticImageData | string;
+};
