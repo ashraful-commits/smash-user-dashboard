@@ -7,7 +7,7 @@ export type maxWidthType = {
 };
 export type leaderType = {
   leaderAvatar: StaticImageData | string;
-  name: Number;
+  name: string;
   Id: Number;
   game: Number;
   point: string;
