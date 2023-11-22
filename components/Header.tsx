@@ -7,7 +7,7 @@ import logo from "@/public/logo.png";
 import { Button } from "./ui/button";
 const Header = () => {
   return (
-    <MaxWidthContainer className="w-full h-[70px] bg-[#1C1C24] px-[14px] flex items-center sticky top-0">
+    <MaxWidthContainer className="w-full h-[70px] bg-[#1C1C24] px-[14px] flex items-center sticky z-[99999] top-0">
       <header className=" w-full flex h-full items-center justify-between">
         <div className="w-full mx-auto h-full flex justify-between items-center">
           <a className="flex title-font font-medium items-center mb-4 md:mb-0">

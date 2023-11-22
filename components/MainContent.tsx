@@ -31,44 +31,43 @@ const MainContent = () => {
       </h6>
       <div className="w-full hero_section h-[370px] mt-[18px] flex justify-between ">
         <div className="w-[844px] relative z-0 h-full slider rounded-[20px] overflow-hidden">
-
-        <Slider bigLeague={bigLeague} bigLeagueoverlay={bigLeagueoverlay} />
-        <div className="w-[95px] h-[41px] z-40 flex absolute bottom-[40px] right-[35px] gap-[3px]">
-          <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-            >
-              <path
-                d="M16.3711 9.05403L10.3688 15.0563L16.3711 21.0586"
-                stroke="white"
-                stroke-width="1.74621"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-            >
-              <path
-                d="M14.373 9.05403L20.3753 15.0563L14.373 21.0586"
-                stroke="white"
-                stroke-width="1.74621"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
+          <Slider bigLeague={bigLeague} bigLeagueoverlay={bigLeagueoverlay} />
+          <div className="w-[95px] h-[41px] z-40 flex absolute bottom-[40px] right-[35px] gap-[3px]">
+            <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <path
+                  d="M16.3711 9.05403L10.3688 15.0563L16.3711 21.0586"
+                  stroke="white"
+                  stroke-width="1.74621"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <path
+                  d="M14.373 9.05403L20.3753 15.0563L14.373 21.0586"
+                  stroke="white"
+                  stroke-width="1.74621"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div className="leaderboards w-[410px] h-[371px] rounded-[20px] bg-[#1C1C24]">
           <div className="p-[20px]">
