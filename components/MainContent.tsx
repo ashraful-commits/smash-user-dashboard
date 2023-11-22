@@ -1,8 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import MaxWidthContainer from "./MaxWidthContainer";
 import Image from "next/image";
 import bigLeague from "@/public/bigleaque.png";
-import bigLeagueoverlay from "@/public/bigleaqueoverlay.png";
+
 import { Button } from "./ui/button";
 import LeaderBoardMember from "./LeaderBoardMember";
 import leaderAvatar from "@/public/leaderAvatar.png";
@@ -18,6 +19,16 @@ import UpComingEvent from "./UpComingEvent";
 import MostPopularGam from "./MostPopularGam";
 import Slider from "./Slider";
 const MainContent = () => {
+  const [slider, setSlider] = useState(0);
+  const sliderList = [
+    {
+      bigLeague: tourImg1,
+    },
+    {
+      bigLeague: tourImg2,
+    },
+  ];
+  console.log(slider);
   return (
     <MaxWidthContainer className="w-[1350px] max-h-full bg-[#13131A] px-[40px] pt-[49px]">
       <h6 className="text-[24px] flex items-center gap-[3px] font-['Poppins'] font-[600] leading-[36px] tracking-[.1px] text-[#fafafb] ">
@@ -30,10 +41,31 @@ const MainContent = () => {
         </span>
       </h6>
       <div className="w-full hero_section h-[370px] mt-[18px] flex justify-between ">
-        <div className="w-[844px] relative z-0 h-full slider rounded-[20px] overflow-hidden">
-          <Slider bigLeague={bigLeague} bigLeagueoverlay={bigLeagueoverlay} />
-          <div className="w-[95px] h-[41px] z-40 flex absolute bottom-[40px] right-[35px] gap-[3px]">
-            <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+        <div className="w-[844px] relative z-0 h-full slider rounded-[20px] flex overflow-x-hidden">
+          {sliderList.map((item, i) => {
+            return (
+              <div
+                key={i}
+                className={` ${
+                  slider === i
+                    ? "absolute  top-0 left-0  "
+                    : ""
+                }`}
+              >
+                <Slider bigLeague={item.bigLeague} />
+              </div>
+            );
+          })}
+
+          <div className="w-[95px] h-[41px] z-40 flex sticky top-[300px] right-[35px] gap-[3px]">
+            <button
+              onClick={() => {
+                setSlider((prev) =>
+                  prev > sliderList.length - 1 ? prev - 1 : 0
+                );
+              }}
+              className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -50,7 +82,14 @@ const MainContent = () => {
                 />
               </svg>
             </button>
-            <button className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center ">
+            <button
+              onClick={() => {
+                setSlider((prev) =>
+                  prev < sliderList.length - 1 ? prev + 1 : 0
+                );
+              }}
+              className="w-[40.8px] h-[40.8px] hover:scale-105 transition-all duration-500 ease-in-out rounded-full bg-gray-500 bg-opacity-50  flex justify-center items-center "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"

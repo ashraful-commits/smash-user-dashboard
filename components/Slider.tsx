@@ -2,13 +2,13 @@ import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import { SliderType } from "@/Type";
-
-const Slider = ({ bigLeague, bigLeagueoverlay }: SliderType) => {
+import bigLeagueoverlay from "@/public/bigleaqueoverlay.png";
+const Slider = ({ bigLeague }: SliderType) => {
   return (
-    <div className="our big leaque w-[844px] h-full slider rounded-[20px] overflow-hidden">
-      <div className="w-fu h-full relative z-0">
+    <div className="our_big_leaque transition-all duration-500 ease-in-out w-[844px] h-full shrink-0 slider rounded-[20px] overflow-hidden">
+      <div className="w-full h-full relative z-0 transition-all duration-500 ease-in-out">
         <Image
-          className="absolute z-10 top-0 left-0"
+          className="absolute  w-full h-full object-cover z-10 top-0 left-0"
           src={bigLeague}
           alt="our biggest league"
         />

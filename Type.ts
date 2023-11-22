@@ -33,5 +33,5 @@ export type MostPopularType = {
 };
 export type SliderType = {
   bigLeague: StaticImageData | string;
-  bigLeagueoverlay: StaticImageData | string;
+  
 };
