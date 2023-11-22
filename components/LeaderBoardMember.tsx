@@ -24,7 +24,7 @@ const LeaderBoardMember = ({
           <p className="text-[#92929d] font-['Poppins'] text-[12px] ">
             Id# {Id}{" "}
             <span className=" text-[12px] font-[400] text-[#3dd598] ">
-              {point}Point
+              {point} &nbsp;Point
             </span>
           </p>
         </div>
