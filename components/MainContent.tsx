@@ -235,7 +235,6 @@ const MainContent = () => {
           date="Nov 01, 2023"
           time="6:00 AM"
           title="War zone Tournament"
-          prize={3500}
           Participant={128}
         />
         <UpComingEvent
@@ -243,7 +242,6 @@ const MainContent = () => {
           date="Nov 01, 2023"
           time="6:00 AM"
           title="War zone Tournament"
-          prize={3500}
           Participant={128}
         />
         <UpComingEvent
@@ -251,7 +249,6 @@ const MainContent = () => {
           date="Nov 01, 2023"
           time="6:00 AM"
           title="War zone Tournament"
-          prize={3500}
           Participant={128}
         />
         <UpComingEvent
@@ -259,7 +256,6 @@ const MainContent = () => {
           date="Nov 01, 2023"
           time="6:00 AM"
           title="War zone Tournament"
-          prize={3500}
           Participant={128}
         />
       </div>
