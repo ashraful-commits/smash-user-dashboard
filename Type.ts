@@ -8,30 +8,26 @@ export type maxWidthType = {
 export type leaderType = {
   leaderAvatar: StaticImageData | string;
   name: string;
-  Id: Number;
-  game: Number;
+  Id: number;
+  game: string;
   point: string;
 };
 export type UpcomingType = {
   tourImg: StaticImageData | string;
-
   date: string;
   time: string;
   title: string;
-  prize: Number;
-  Participant: Number;
+  prize: number;
+  Participant: number;
 };
 export type eventType = {
   tourImg: StaticImageData | string;
-
   date: string;
   time: string;
   title: string;
-
-  Participant: Number;
+  Participant: number;
 };
 export type MostPopularType = {
   tourImg: StaticImageData | string;
-
   title: string;
 };
