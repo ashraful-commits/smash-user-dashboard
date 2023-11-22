@@ -6,32 +6,32 @@ export type maxWidthType = {
   children: ReactNode;
 };
 export type leaderType = {
-  leaderAvatar: StaticImageData | String;
+  leaderAvatar: StaticImageData | string;
   name: Number;
   Id: Number;
   game: Number;
-  point: String;
+  point: string;
 };
 export type UpcomingType = {
-  tourImg: StaticImageData | String;
+  tourImg: StaticImageData | string;
 
-  date: String;
-  time: String;
-  title: String;
+  date: string;
+  time: string;
+  title: string;
   prize: Number;
   Participant: Number;
 };
 export type eventType = {
-  tourImg: StaticImageData | String;
+  tourImg: StaticImageData | string;
 
-  date: String;
-  time: String;
-  title: String;
+  date: string;
+  time: string;
+  title: string;
 
   Participant: Number;
 };
 export type MostPopularType = {
-  tourImg: StaticImageData | String;
+  tourImg: StaticImageData | string;
 
-  title: String;
+  title: string;
 };
