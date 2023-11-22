@@ -31,7 +31,7 @@ const SideBar = () => {
         </svg>
       ),
       name: "News Feed",
-      path: "/new feed",
+      path: "/newfeed",
     },
     {
       svg: (
@@ -164,7 +164,7 @@ const SideBar = () => {
     },
   ];
   //=======================================
-  const [activeLi, setActiveLi] = useState("/new feed");
+  const [activeLi, setActiveLi] = useState("/newfeed");
   return (
     <MaxWidthContainer className="w-[250px] text-center bg-[#1C1C24] min-h-full">
       <Image
