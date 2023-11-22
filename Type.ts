@@ -10,7 +10,7 @@ export type leaderType = {
   name: string;
   Id: number;
   game: string;
-  point: string;
+  point: number;
 };
 export type UpcomingType = {
   tourImg: StaticImageData | string;
