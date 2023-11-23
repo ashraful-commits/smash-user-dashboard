@@ -8,7 +8,7 @@ import TableComponent from "./TableComponent";
 import { singleInvoice } from "@/Type";
 
 const MainContent = () => {
-  const invoices:singleInvoice = [
+  const invoices: singleInvoice[] = [
     {
       name: "INV001",
       avatar: avatar,
