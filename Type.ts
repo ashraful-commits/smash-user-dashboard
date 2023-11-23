@@ -41,3 +41,15 @@ export type AchievementType = {
   title: string;
   left: number;
 };
+export type InvoiceType = {
+  name: string;
+  avatar: StaticImageData | string;
+  rank: number;
+  id: string;
+  point: number;
+  gross: number;
+  Net: number;
+  handicap: number;
+  smashCash: number;
+  mostPlayed: { name: string; logo: StaticImageData | string }[];
+};

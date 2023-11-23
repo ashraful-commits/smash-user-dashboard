@@ -12,8 +12,9 @@ import {
 } from "@/components/ui/table";
 import Image from "next/image";
 import { ScrollArea } from "../ui/scroll-area";
+import { InvoiceType } from "@/Type";
 
-const TableComponent = ({ data }) => {
+const TableComponent = ({ data }: InvoiceType) => {
   return (
     <>
       <Table className="w-[1219px] m-auto mt-[19px] h-full flex flex-col border-none">
