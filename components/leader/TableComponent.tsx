@@ -14,7 +14,7 @@ import Image from "next/image";
 import { ScrollArea } from "../ui/scroll-area";
 import { InvoiceType, singleInvoice } from "@/Type";
 
-const TableComponent = ({ data }: singleInvoice[]) => {
+const TableComponent = ({ data }:any) => {
   return (
     <>
       <Table className="w-[1219px] m-auto mt-[19px] h-full flex flex-col border-none">
