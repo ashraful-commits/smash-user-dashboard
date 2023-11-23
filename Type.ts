@@ -33,5 +33,11 @@ export type MostPopularType = {
 };
 export type SliderType = {
   bigLeague: StaticImageData | string;
-  
+};
+export type AchievementType = {
+  prize: number;
+  time: string;
+  banner: StaticImageData | string;
+  title: string;
+  left: number;
 };

@@ -94,7 +94,7 @@ const SideBar = () => {
         src={avatar}
         alt="avatar"
       />
-      <span className="w-full text-[18px] text-center uppercase mt-[12px] font-[700] font-['Poppins'] text-white ">
+      <span className="w-full block text-[18px] text-center uppercase mt-[12px] font-[700] font-['Poppins'] text-white ">
         ceo of golf
       </span>
       <span className=" m-auto text-center text-[18px] flex gap-1 uppercase mt-[12px] justify-center font-[700] font-['Poppins'] text-white ">

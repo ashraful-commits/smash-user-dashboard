@@ -4,7 +4,7 @@ import MaxWidthContainer from "./MaxWidthContainer";
 import Image from "next/image";
 import bigLeague from "@/public/bigleaque.png";
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import LeaderBoardMember from "./LeaderBoardMember";
 import leaderAvatar from "@/public/leaderAvatar.png";
 import leaderAvatar2 from "@/public/leaderAvatar2.png";
