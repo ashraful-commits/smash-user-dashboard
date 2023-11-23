@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/table";
 import Image from "next/image";
 import { ScrollArea } from "../ui/scroll-area";
-import { InvoiceType } from "@/Type";
+import { InvoiceType, singleInvoice } from "@/Type";
 
 const TableComponent = ({ data }: InvoiceType) => {
   return (
@@ -45,7 +45,7 @@ const TableComponent = ({ data }: InvoiceType) => {
         </TableHeader>
         <TableBody className="w-full mt-[10px]">
           <ScrollArea className="w-full h-full">
-            {data.map((item, i) => (
+            {data?.map((item: singleInvoice, i: number) => (
               <TableRow
                 className="w-[1219px] group h-[62px] bg-[none] border-b-[1px] border-gray-800  shrink-0 hover:bg-gradient-to-r transition-all duration-500 ease-in-out rounded-[30px]  from-gray-700 to-gray-800 flex items-center"
                 key={i}

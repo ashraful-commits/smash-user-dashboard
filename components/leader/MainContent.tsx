@@ -5,10 +5,9 @@ import avatar from "@/public/avatar.png";
 import Achievements from "./Achievements";
 import InviteFriend from "./InviteFriend";
 import TableComponent from "./TableComponent";
-import { singleInvoice } from "@/Type";
 
 const MainContent = () => {
-  const invoices: singleInvoice[] = [
+  const invoices = [
     {
       name: "INV001",
       avatar: avatar,
