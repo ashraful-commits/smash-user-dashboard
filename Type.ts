@@ -52,4 +52,4 @@ export type InvoiceType = {
   handicap: number;
   smashCash: number;
   mostPlayed: { name: string; logo: StaticImageData | string }[];
-}[];
+};
